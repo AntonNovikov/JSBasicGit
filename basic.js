@@ -1,14 +1,21 @@
-// ___variables____
+/// ___variables____
 var varVariable;
 let letVariable;
 const CONST_VARIABLE = "Necessarily";
 
-// _____fucntions____
+///  __spread____
+let arR = [5, 6, 7, 8];
+console.log(Math.max(arR)); // Nan
+console.log(Math.max(...arR)); // 8
+
+// nodelist -> array no exmaples
+
+/// _____fucntions____
 let params = [5, 6, 7, 8];
 
-function anyNameFunction(param1, param2, paramN, ...params) {
+function anyNameFunction(param1, param2, paramN, ...rest) {
   let sumParams = 0;
-  for (item of params) {
+  for (item of rest) {
     sumParams += item;
   }
   return param1 + param2 + sumParams + paramN;
@@ -26,6 +33,7 @@ let arrFunc = () => {
 };
 arrFunc(); // I  executed function
 
+//
 let a = 5;
 console.log(
   !(function (x) {
