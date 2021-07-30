@@ -3,8 +3,15 @@ var varVariable;
 let letVariable;
 const CONST_VARIABLE = "Necessarily";
 
+/// ___Arrays
+let arrEmpty = [];
+let lengthArr = arrEmpty.length;
+let arrWithOne = [1];
+let arrNew = arrEmpty.concat(arrWithOne);
+let arR = [5, 6, 7, 8]; // for spread rest
+
 ///  __spread____
-let arR = [5, 6, 7, 8];
+
 console.log(Math.max(arR)); // Nan
 console.log(Math.max(...arR)); // 8
 
@@ -12,15 +19,13 @@ console.log(Math.max(...arR)); // 8
 
 // destructuring
 
-const [first, second,...other] = arR;
+const [first, second, ...other] = arR;
 
-const city ={
-    name: 'Moscow',
-    age: 1000,
-    country: "Russia",
-}
-
-
+const city = {
+  name: "Moscow",
+  age: 1000,
+  country: "Russia",
+};
 
 /// _____fucntions____
 let params = [5, 6, 7, 8];
