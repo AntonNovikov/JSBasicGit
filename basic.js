@@ -10,6 +10,13 @@ let arrWithOne = [1];
 let arrNew = arrEmpty.concat(arrWithOne);
 let arR = [5, 6, 7, 8]; // for spread rest
 
+/// Loops
+// for
+// for of
+// for in
+// while
+// do while
+
 ///  __spread____
 
 console.log(Math.max(arR)); // Nan
