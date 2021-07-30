@@ -10,6 +10,18 @@ console.log(Math.max(...arR)); // 8
 
 // nodelist -> array no exmaples
 
+// destructuring
+
+const [first, second,...other] = arR;
+
+const city ={
+    name: 'Moscow',
+    age: 1000,
+    country: "Russia",
+}
+
+
+
 /// _____fucntions____
 let params = [5, 6, 7, 8];
 
@@ -17,6 +29,7 @@ function anyNameFunction(param1, param2, paramN, ...rest) {
   let sumParams = 0;
   for (item of rest) {
     sumParams += item;
+    // rest.reduce((a, i) => a + i, 0);
   }
   return param1 + param2 + sumParams + paramN;
 }
@@ -41,3 +54,5 @@ console.log(
   })(7)
 ); // true
 console.log(a); // 7
+
+// API fetch
