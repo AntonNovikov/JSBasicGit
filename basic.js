@@ -68,3 +68,8 @@ console.log(
 console.log(a); // 7
 
 // API fetch
+
+///___Drawning
+/// SVG в html <svg>
+// 
+/// canvas
