@@ -1,6 +1,19 @@
 /// ___variables____
 var varVariable;
 let letVariable;
+
+///  ___data types___
+// undefined
+//Boolean
+let typeBoolean = true; // '0' equals true, 0 equals false
+console.log(typeof typeBoolean);
+//Number
+//String
+//BigINt
+//Symbol
+
+/// null
+
 const CONST_VARIABLE = "Necessarily";
 
 /// ___Arrays
