@@ -14,6 +14,7 @@ console.log(typeString);
 console.log(typeString.toUpperCase());
 console.log(typeString.toLowerCase());
 console.log(typeString.trim());
+console.log(typeString.charAt(3));
 //BigINt
 //Symbol
 
