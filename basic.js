@@ -9,6 +9,11 @@ let typeBoolean = true; // '0' equals true, 0 equals false
 console.log(typeof typeBoolean);
 //Number
 //String
+let typeString = " String foo";
+console.log(typeString);
+console.log(typeString.toUpperCase());
+console.log(typeString.toLowerCase());
+console.log(typeString.trim());
 //BigINt
 //Symbol
 
