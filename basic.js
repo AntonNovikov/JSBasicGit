@@ -95,6 +95,14 @@ console.log(a); // 7
 
 // 'use strict'
 
+(function () {
+  "use strict";
+
+  for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+  }
+})();
+
 /// https://svgjs.dev/docs/3.0/
 var input = document.querySelector("input[type=text]");
 var draw = SVG().addTo("#drawing").viewbox(0, 0, 300, 140);
