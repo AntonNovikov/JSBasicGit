@@ -29,6 +29,7 @@ let arrWithOne = [1];
 let arrNew = arrEmpty.concat(arrWithOne);
 let arR = [5, 6, 7, 8]; // for spread rest
 
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
 // console.log(
 //   [0, 1, 2, 3, 4].reduce(function (previousValue, currentValue, index, array) {
 //     return previousValue + currentValue;
@@ -36,6 +37,13 @@ let arR = [5, 6, 7, 8]; // for spread rest
 // );
 var total = [0, 1, 2, 3].reduce(function (a, b) {
   return a + b;
+});
+var flattened = [
+  [0, 1],
+  [2, 3],
+  [4, 5],
+].reduce(function (a, b) {
+  return a.concat(b);
 });
 
 // console.log(
@@ -48,6 +56,14 @@ var total = [0, 1, 2, 3].reduce(function (a, b) {
 //     return previousValue + currentValue;
 //   })
 // );
+
+var flattened = [
+  [0, 1],
+  [2, 3],
+  [4, 5],
+].reduceRight(function (a, b) {
+  return a.concat(b);
+}, []);
 
 /// Loops
 // for
