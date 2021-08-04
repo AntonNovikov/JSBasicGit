@@ -29,6 +29,23 @@ let arrWithOne = [1];
 let arrNew = arrEmpty.concat(arrWithOne);
 let arR = [5, 6, 7, 8]; // for spread rest
 
+// console.log(
+//   [0, 1, 2, 3, 4].reduce(function (previousValue, currentValue, index, array) {
+//     return previousValue + currentValue;
+//   })
+// );
+
+// console.log(
+//   [0, 1, 2, 3, 4].reduceRight(function (
+//     previousValue,
+//     currentValue,
+//     index,
+//     array
+//   ) {
+//     return previousValue + currentValue;
+//   })
+// );
+
 /// Loops
 // for
 // for of
