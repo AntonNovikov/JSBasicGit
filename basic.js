@@ -34,6 +34,9 @@ let arR = [5, 6, 7, 8]; // for spread rest
 //     return previousValue + currentValue;
 //   })
 // );
+var total = [0, 1, 2, 3].reduce(function (a, b) {
+  return a + b;
+});
 
 // console.log(
 //   [0, 1, 2, 3, 4].reduceRight(function (
