@@ -163,7 +163,7 @@ function updateText(textPath) {
 }
 
 // class
-class concatWord {
+class ConcatWord {
   constructor(...args) {
     this.args = args;
   }
@@ -177,7 +177,25 @@ class concatWord {
   }
 }
 
-let one = new concatWord("one", "two", "sdfl");
-let two = new concatWord("sdhf", "dfsd");
+let one = new ConcatWord("one", "two", "sdfl");
+let two = new ConcatWord("sdhf", "dfsd");
 one.consoleLog();
 two.consoleLog();
+
+// another classes
+class One {
+  constructor(first) {
+    this.first = first;
+  }
+  show() {
+    console.log(this.first + "is gone");
+  }
+}
+
+class Ten extends One {
+  speak() {
+    console.log(this.first + "is here");
+  }
+}
+let number = new Ten("Tenth ");
+number.show();
