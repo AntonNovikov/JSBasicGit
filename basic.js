@@ -178,10 +178,6 @@ let passYears = diffDateYear,
 
 if (diffDateDay < 0) {
   passDays = justDate.getDate() - diffDateDay;
-  console.log(justDate.getDate());
-  console.log(diffDateDay);
-  console.log("passDays");
-  console.log(passDays);
   if (diffDateMonth > 0) {
     diffDateMonth--;
   } else {
@@ -193,13 +189,6 @@ if (diffDateDay < 0) {
 let all = `${
   diffDateYear > 4 ? "Годов" : "Лет "
 }: ${diffDateYear}, месяцев: ${diffDateMonth}, дней: ${diffDateDay}`;
-console.log(all);
-console.log(TODAY);
-console.log(justDate);
-console.log(TODAY.getFullYear());
-console.log(justDate.getFullYear());
-console.log(TODAY.getMonth());
-console.log(justDate.getMonth());
 
 class ConcatWord {
   constructor(...args) {
