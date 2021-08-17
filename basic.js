@@ -163,6 +163,44 @@ function updateText(textPath) {
 }
 
 // class
+
+const TODAY = new Date();
+
+const justDate = new Date(2019, 7, 16, 19, 20);
+
+let diffDateYear = TODAY.getFullYear() - justDate.getFullYear();
+let diffDateMonth = TODAY.getMonth() - justDate.getMonth();
+let diffDateDay = TODAY.getDate() - justDate.getDate();
+
+let passYears = diffDateYear,
+  passMonths = diffDateMonth,
+  passDays = diffDateDay;
+
+if (diffDateDay < 0) {
+  passDays = justDate.getDate() - diffDateDay;
+  console.log(justDate.getDate());
+  console.log(diffDateDay);
+  console.log("passDays");
+  console.log(passDays);
+  if (diffDateMonth > 0) {
+    diffDateMonth--;
+  } else {
+    diffDateMonth = 11;
+    passYears--;
+  }
+}
+
+let all = `${
+  diffDateYear > 4 ? "Годов" : "Лет "
+}: ${diffDateYear}, месяцев: ${diffDateMonth}, дней: ${diffDateDay}`;
+console.log(all);
+console.log(TODAY);
+console.log(justDate);
+console.log(TODAY.getFullYear());
+console.log(justDate.getFullYear());
+console.log(TODAY.getMonth());
+console.log(justDate.getMonth());
+
 class ConcatWord {
   constructor(...args) {
     this.args = args;
